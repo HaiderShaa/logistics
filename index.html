@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Watt Trucking</title>
+    <title>Star Logistics</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -21,6 +21,7 @@
             box-sizing: border-box;
             text-align: center;
             padding: 60px 20px; /* Adjust padding as needed */
+            position: relative;
         }
         .dot-container {
             text-align: center;
@@ -40,6 +41,57 @@
         .dot.active {
             background-color: #717171;
         }
+        /* Navigation styling */
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center within the panel */
+            list-style: none;
+            padding: 0;
+            background-color: #333;
+            margin: 0;
+            position: relative;
+        }
+        nav ul li {
+            padding: 15px 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        /* Logo styling */
+        .logo-container {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+        .logo {
+            width: 100px;
+        }
+        /* Section styling */
+        .wrapper.style1 {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .wrapper.style1 .container {
+            position: relative;
+            z-index: 1;
+        }
+        /* Add background images for slides */
+        .slide img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -52,6 +104,9 @@
             <li><a href="#trucks">Trucks</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Star Logistics Logo" class="logo">
+        </div>
     </nav>
 
     <!-- Home -->
@@ -61,12 +116,13 @@
                 <div class="slide">
                     <div class="container">
                         <header>
-                            <h1>Welcome to <strong>Watt Trucking</strong></h1>
+                            <h1>Welcome to <strong>Star Logistics</strong></h1>
                         </header>
                         <p>Premier Dispatch Services Across the USA</p>
-                        <p>Since 2015, Watt Trucking has been dedicated to providing top-notch dispatching services for owner-operators and truck fleets. Our comprehensive suite of services goes beyond mere load searching to include billing, document management, paperwork handling, broker and shipper communications, SAFETY DOT compliance, and much more.</p>
+                        <p>Since 2015, Star Logistics has been dedicated to providing top-notch dispatching services for owner-operators and truck fleets. Our comprehensive suite of services goes beyond mere load searching to include billing, document management, paperwork handling, broker and shipper communications, SAFETY DOT compliance, and much more.</p>
                         <p>Our mission is simple: Drive, deliver, and earn. We handle the rest.</p>
                     </div>
+                    <img src="images/image1.jpg" alt="Slide Image 1">
                 </div>
                 <div class="slide">
                     <div class="container">
@@ -75,10 +131,41 @@
                         </header>
                         <p>Discover the comprehensive services we offer and how we ensure excellence in every aspect of trucking dispatch.</p>
                     </div>
+                    <img src="images/image2.jpg" alt="Slide Image 2">
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <header>
+                            <h1>Our Values</h1>
+                        </header>
+                        <p>Integrity, Efficiency, and Commitment to Excellence in Trucking.</p>
+                    </div>
+                    <img src="images/image3.jpg" alt="Slide Image 3">
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <header>
+                            <h1>Our Team</h1>
+                        </header>
+                        <p>Meet the professionals who make Star Logistics a leader in dispatch services.</p>
+                    </div>
+                    <img src="images/image4.jpg" alt="Slide Image 4">
+                </div>
+                <div class="slide">
+                    <div class="container">
+                        <header>
+                            <h1>Contact Us</h1>
+                        </header>
+                        <p>Get in touch with us to learn more about our services or to schedule a consultation.</p>
+                    </div>
+                    <img src="images/image5.jpg" alt="Slide Image 5">
                 </div>
             </div>
             <div class="dot-container">
                 <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
                 <span class="dot"></span>
             </div>
         </div>
@@ -127,35 +214,28 @@
             <div class="row">
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured"><img src="https://i.imgur.com/your-box-truck-image.jpg" alt="Box Truck" /></a>
+                        <a href="#" class="image featured"><img src="images/box-truck.jpg" alt="Box Truck" /></a>
                         <h3>Box Truck</h3>
                         <p>Ideal for local deliveries and versatile transport needs.</p>
                     </article>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured"><img src="https://i.imgur.com/your-dry-van-image.jpg" alt="Dry Van" /></a>
+                        <a href="#" class="image featured"><img src="images/dry-van.jpg" alt="Dry Van" /></a>
                         <h3>Dry Van</h3>
                         <p>Perfect for transporting goods that need protection from weather.</p>
                     </article>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured"><img src="https://i.imgur.com/your-flatbed-image.jpg" alt="Flatbed" /></a>
+                        <a href="#" class="image featured"><img src="images/flatbed.jpg" alt="Flatbed" /></a>
                         <h3>Flatbed</h3>
                         <p>Suitable for heavy loads and oversized cargo.</p>
                     </article>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured"><img src="https://i.imgur.com/your-step-deck-image.jpg" alt="Step Deck" /></a>
-                        <h3>Step Deck</h3>
-                        <p>Allows for the transport of taller loads with ease.</p>
-                    </article>
-                </div>
-                <div class="col-4 col-6-medium col-12-small">
-                    <article class="box style2">
-                        <a href="#" class="image featured"><img src="https://i.imgur.com/your-power-only-image.jpg" alt="Power Only" /></a>
+                        <a href="#" class="image featured"><img src="images/power-only.jpg" alt="Power Only" /></a>
                         <h3>Power Only</h3>
                         <p>Perfect for hauling trailers without freight.</p>
                     </article>
@@ -211,6 +291,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <a href="mailto:haideraltafshah@gmail.com">TARS Inc</a>. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
